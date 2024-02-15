@@ -8,8 +8,11 @@ public class Unique {
             uniqueEle.add(elements);
         }
         int sum = 0;
-        
-        System.out.println("Number of distinct element are : " + uniqueEle);
+        for(int sumOfEle : uniqueEle){
+            sum += sumOfEle;
+        }
+
+        System.out.println("Number of distinct element are: " + uniqueEle + " the addition is: " + sum);
     }
 }
 
